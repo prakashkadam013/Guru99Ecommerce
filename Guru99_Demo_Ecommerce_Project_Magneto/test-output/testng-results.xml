@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-01T15:22:28 IST" name="Default suite" finished-at="2022-10-01T15:23:39 IST" duration-ms="70649">
+    <groups>
+    </groups>
+    <test started-at="2022-10-01T15:22:28 IST" name="Default test" finished-at="2022-10-01T15:23:39 IST" duration-ms="70649">
+      <class name="Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day5_Script">
+        <test-method is-config="true" signature="SetupBrowser(java.lang.String)[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day5_Script@1a942c18]" started-at="2022-10-01T15:22:28 IST" name="SetupBrowser" finished-at="2022-10-01T15:22:49 IST" duration-ms="20790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupBrowser -->
+        <test-method signature="VerifyWishlistisShared()[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day5_Script@1a942c18]" started-at="2022-10-01T15:22:49 IST" name="VerifyWishlistisShared" finished-at="2022-10-01T15:23:34 IST" duration-ms="44598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyWishlistisShared -->
+        <test-method is-config="true" signature="ClosetheBrowser()[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day5_Script@1a942c18]" started-at="2022-10-01T15:23:34 IST" name="ClosetheBrowser" finished-at="2022-10-01T15:23:39 IST" duration-ms="5218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBrowser -->
+      </class> <!-- Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day5_Script -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
