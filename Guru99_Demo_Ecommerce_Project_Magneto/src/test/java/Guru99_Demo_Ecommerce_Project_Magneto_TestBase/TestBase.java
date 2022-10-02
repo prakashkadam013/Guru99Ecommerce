@@ -38,7 +38,7 @@ public class TestBase {
 	@AfterTest
 	public void ClosetheBrowser() throws InterruptedException {
 		Thread.sleep(5000);
-		driver.quit();
+	//	driver.quit();
 	}
 	
 	

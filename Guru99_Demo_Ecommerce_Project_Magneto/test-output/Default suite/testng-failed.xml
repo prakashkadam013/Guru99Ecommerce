@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day5_Script">
+      <class name="Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day6_Script">
         <methods>
-          <include name="VerifyWishlistisShared"/>
-          <include name="CreateNewAccount"/>
+          <include name="EnterBillingInformation"/>
           <include name="ClosetheBrowser"/>
           <include name="SetupBrowser"/>
         </methods>
-      </class> <!-- Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day5_Script -->
+      </class> <!-- Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day6_Script -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
