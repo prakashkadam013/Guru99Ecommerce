@@ -35,6 +35,7 @@ public class BillingForm {
 	WebElement address;
 	
 	public void enteraddress(String add) {
+		address.clear();
 		address.sendKeys(add);
 	}
 	
@@ -42,6 +43,7 @@ public class BillingForm {
 	WebElement city;
 	
 	public void entercity(String cty) {
+		city.clear();
 		city.sendKeys(cty);
 	}
 	
@@ -52,6 +54,7 @@ public class BillingForm {
 	WebElement zipcode;
 	
 	public void enterzipcode(String zip) {
+		zipcode.clear();
 		zipcode.sendKeys(zip);
 	}
 	@FindBy(name="billing[country_id]")
@@ -61,6 +64,7 @@ public class BillingForm {
 	WebElement telephone;
 	
 	public void entertelephone(String tele) {
+		telephone.clear();
 		telephone.sendKeys(tele);
 	}
 

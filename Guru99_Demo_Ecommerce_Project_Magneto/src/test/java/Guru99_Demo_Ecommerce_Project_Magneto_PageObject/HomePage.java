@@ -25,4 +25,34 @@ public class HomePage {
 	public void clickonMobilelink(){
 		mobile.click();
 	}
+	
+	@FindBy(linkText="MY ACCOUNT")
+	WebElement myaccount;
+	
+	public void clickonMyAccountlink() {
+		myaccount.click();
+	}
+	
+	@FindBy(name="login[username]")
+	WebElement emailid;
+	
+	public void enteremailid(String email) {
+		emailid.clear();
+		emailid.sendKeys(email);
+	}
+	
+	@FindBy(name="login[password]")
+	WebElement pwd;
+	
+	public void enterpassword(String password) {
+		pwd.clear();
+		pwd.sendKeys(password);
+	}
+	
+	@FindBy(id="send2")
+	WebElement loginbtn;
+	
+	public void ClickonLoginbtn() {
+		loginbtn.click();
+	}
 }

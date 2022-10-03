@@ -6,14 +6,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 
+import Guru99_Demo_Ecommerce_Project_Magneto_Utilities.ConfigDataProvider;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
 	public WebDriver driver;
+	public static ConfigDataProvider ConfigDataprovider;
+	
+	@BeforeSuite
+	public void init() {
+		ConfigDataprovider = new ConfigDataProvider("./ConfigData/configdata.properties");
+	}
 	
 	@BeforeTest
 	public void SetupBrowser(@Optional("Chrome")String browser) {

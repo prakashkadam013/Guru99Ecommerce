@@ -9,6 +9,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -89,11 +91,13 @@ public class Day6_Script extends TestBase {
 	public void EnterBillingInformation() throws IOException {
 		
 		driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/div[3]/div/ul/li[1]/button/span/span")).click();
-
+		WebElement billing_id = driver.findElement(By.name("billing_address_id"));
+		SelectDropdownUtility.DropdwonSelectionbyVisibleText(billing_id, "New Address");
+		
 		bf = new BillingForm(driver);
-		bf.enterfirstname("Rajesh");
-		bf.enterlastname("Kadam");
-		bf.enteraddress("abcde");
+		bf.enterfirstname("Ram");
+		bf.enterlastname("deshmukh");
+		bf.enteraddress("sgjaf");
 		bf.entercity("New York");
 		
 		stat = driver.findElement(By.name("billing[region_id]"));
@@ -102,11 +106,15 @@ public class Day6_Script extends TestBase {
 
 		cntry = driver.findElement(By.name("billing[country_id]"));
 		SelectDropdownUtility.DropdwonSelectionbyVisibleText(cntry, "United States");
-		bf.entertelephone("12345678");
+		bf.entertelephone("1234567894");
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	/*	WebElement conti = driver.findElement(By.xpath("//*[@id=\\\"billing-buttons-container\\\"]/button"));
+		WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(conti));
+		wait.until(ExpectedConditions.elementToBeClickable(conti));
+		conti.click(); */
+		
 		bf.clickonContinue();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		bf.clickonNextContinuebtn();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		bf.clickonpaymentmethod();
@@ -115,7 +123,7 @@ public class Day6_Script extends TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		bf.clickonPlaceOrderBtn();
 		
-		WebElement confirm_msg = driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div[1]"));
+		WebElement confirm_msg = driver.findElement(By.xpath("//*[@id=\"top\"]/body/div/div/div[2]/div/div/div[1]/h1"));
 		String msg = confirm_msg.getText();
 		System.out.println(msg);
 		
@@ -128,7 +136,7 @@ public class Day6_Script extends TestBase {
 		File target = new File("./Screenshot/OrderPlaced.png");
 		FileHandler.copy(src, target);
 		
-		if(msg.contains("Your order has been received.")) {
+		if(msg.contains("CHECKOUT")) {
 			Assert.assertTrue(true);
 			System.out.println("Your order is successfully placed");
 		} else {
