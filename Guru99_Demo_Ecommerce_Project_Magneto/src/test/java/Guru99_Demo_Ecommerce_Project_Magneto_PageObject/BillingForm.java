@@ -48,7 +48,7 @@ public class BillingForm {
 	}
 	
 	@FindBy(name="billing[region_id]")
-	WebElement stat;
+	public WebElement stat;
 	
 	@FindBy(name="billing[postcode]")
 	WebElement zipcode;
@@ -58,7 +58,7 @@ public class BillingForm {
 		zipcode.sendKeys(zip);
 	}
 	@FindBy(name="billing[country_id]")
-	WebElement contry;
+	public WebElement contry;
 	
 	@FindBy(name="billing[telephone]")
 	WebElement telephone;
