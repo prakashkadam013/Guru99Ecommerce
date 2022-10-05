@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-04T13:30:30 IST" name="Default suite" finished-at="2022-10-04T13:31:07 IST" duration-ms="36583">
+  <suite started-at="2022-10-05T11:38:05 IST" name="Default suite" finished-at="2022-10-05T11:38:30 IST" duration-ms="25207">
     <groups>
     </groups>
-    <test started-at="2022-10-04T13:30:30 IST" name="Default test" finished-at="2022-10-04T13:31:07 IST" duration-ms="36583">
-      <class name="Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day8_Script">
-        <test-method is-config="true" signature="init()[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day8_Script@55a147cc]" started-at="2022-10-04T13:30:30 IST" name="init" finished-at="2022-10-04T13:30:30 IST" duration-ms="19" status="PASS">
+    <test started-at="2022-10-05T11:38:05 IST" name="Default test" finished-at="2022-10-05T11:38:30 IST" duration-ms="25207">
+      <class name="Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day9_Script">
+        <test-method is-config="true" signature="init()[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day9_Script@55a147cc]" started-at="2022-10-05T11:38:05 IST" name="init" finished-at="2022-10-05T11:38:05 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="SetupBrowser(java.lang.String)[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day8_Script@55a147cc]" started-at="2022-10-04T13:30:30 IST" name="SetupBrowser" finished-at="2022-10-04T13:30:42 IST" duration-ms="11528" status="PASS">
+        <test-method is-config="true" signature="SetupBrowser(java.lang.String)[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day9_Script@55a147cc]" started-at="2022-10-05T11:38:05 IST" name="SetupBrowser" finished-at="2022-10-05T11:38:18 IST" duration-ms="12863" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupBrowser -->
-        <test-method signature="ReorderandChangeQty()[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day8_Script@55a147cc]" started-at="2022-10-04T13:30:42 IST" name="ReorderandChangeQty" finished-at="2022-10-04T13:31:02 IST" duration-ms="19791" status="PASS">
+        <test-method signature="VerifyDiscountCouponIsWorking()[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day9_Script@55a147cc]" started-at="2022-10-05T11:38:18 IST" name="VerifyDiscountCouponIsWorking" finished-at="2022-10-05T11:38:25 IST" duration-ms="6939" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ReorderandChangeQty -->
-        <test-method is-config="true" signature="ClosetheBrowser()[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day8_Script@55a147cc]" started-at="2022-10-04T13:31:02 IST" name="ClosetheBrowser" finished-at="2022-10-04T13:31:07 IST" duration-ms="5222" status="PASS">
+        </test-method> <!-- VerifyDiscountCouponIsWorking -->
+        <test-method is-config="true" signature="ClosetheBrowser()[pri:0, instance:Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day9_Script@55a147cc]" started-at="2022-10-05T11:38:25 IST" name="ClosetheBrowser" finished-at="2022-10-05T11:38:30 IST" duration-ms="5370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClosetheBrowser -->
-      </class> <!-- Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day8_Script -->
+      </class> <!-- Guru99_Demo_Ecommerce_Project_Magneto_TestCases.Day9_Script -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

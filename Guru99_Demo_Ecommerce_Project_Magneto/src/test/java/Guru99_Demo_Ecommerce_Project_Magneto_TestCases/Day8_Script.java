@@ -34,6 +34,7 @@ public class Day8_Script extends TestBase {
 		hp.enterpassword(ConfigDataprovider.getpassword());
 		hp.ClickonLoginbtn();
 		
+		// Click on Reorder Button
 		driver.findElement(By.xpath("//*[@id=\"my-orders-table\"]/tbody/tr[1]/td[6]/span/a[2]")).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		WebElement qty = driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/input"));

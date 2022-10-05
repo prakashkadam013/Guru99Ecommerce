@@ -1,20 +1,17 @@
 package Guru99_Demo_Ecommerce_Project_Magneto_TestCases;
 
-import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.io.FileHandler;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Guru99_Demo_Ecommerce_Project_Magneto_PageObject.BillingForm;
 import Guru99_Demo_Ecommerce_Project_Magneto_PageObject.HomePage;
 import Guru99_Demo_Ecommerce_Project_Magneto_TestBase.TestBase;
+import Guru99_Demo_Ecommerce_Project_Magneto_Utilities.Screenshot;
 import Guru99_Demo_Ecommerce_Project_Magneto_Utilities.SelectDropdownUtility;
 
 public class Day6_Script extends TestBase {
@@ -129,10 +126,12 @@ public class Day6_Script extends TestBase {
 		String id = order.getText();
 		System.out.println("order is palced and id is   "+id);
 		
-		TakesScreenshot ts = (TakesScreenshot)driver;
+	/*	TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		File target = new File("./Screenshot/OrderPlaced.png");
-		FileHandler.copy(src, target);
+		FileHandler.copy(src, target); */
+		
+		Screenshot.takeScreenshot(driver, "./Screenshot/OrderPlaced.png");
 		
 		if(msg.contains("CHECKOUT")) {
 			Assert.assertTrue(true);
